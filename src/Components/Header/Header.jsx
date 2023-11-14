@@ -1,10 +1,16 @@
 import "./Header.css";
-import logo from "../../assets/logo/logo.jpg";
 
 const Header = () => {
   return (
     <nav className="flex h-20 pl-24 pr-24 justify-between bg-slate-700 items-center">
-      <img className="h-16 w-16" src={logo} alt="" />
+      <div className="text-white">
+        <img
+          className="h-16 w-16"
+          src="https://i.ibb.co/f0cqP1m/Screenshot-2023-11-15-010704-removebg-preview.png"
+          alt=""
+        />
+        <h2 className="font-semibold pb-4">Beauty Zoon</h2>
+      </div>
       <div className="text-white font-semibold">
         <a href="/shop">Shop</a>
         <a href="/orders">Orders</a>
