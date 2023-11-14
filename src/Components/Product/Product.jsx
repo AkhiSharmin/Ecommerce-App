@@ -1,7 +1,10 @@
 import { FaShoppingCart } from "react-icons/fa";
 
 const Product = (props) => {
+  //   console.log(props);
   const { img, name, seller, quantity, price, rating } = props.product;
+
+  const handelAddToCart = props.handelAddToCart;
 
   return (
     <div>
@@ -16,7 +19,10 @@ const Product = (props) => {
           <p>Ratings: {rating} starts</p>
           <p>Quantity: {quantity} pice</p>
         </div>
-        <button className="btn  hover:bg-green-200 btn-wide w-full">
+        <button
+          onClick={() => handelAddToCart(props.product)}
+          className="btn  hover:bg-green-200 btn-wide w-full"
+        >
           Add To Cart <FaShoppingCart />
         </button>
       </div>
