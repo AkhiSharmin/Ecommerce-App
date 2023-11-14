@@ -13,9 +13,9 @@ const Shop = () => {
 
   return (
     <div>
-      <div className="shop-container grid grid-cols-5">
+      <div className="shop-container max-w-full mx-auto grid grid-cols-5 gap-5 p-8">
         <div className="product-container col-span-4">
-          <div className="grid grid-cols-3 gap-5 my-6">
+          <div className="grid grid-cols-3 gap-5">
             {products.map((product) => (
               <Product product={product} key={product.id}></Product>
             ))}
