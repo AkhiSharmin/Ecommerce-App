@@ -4,7 +4,7 @@ import logo from "../../assets/logo/logo.jpg";
 const Header = () => {
   return (
     <nav className="flex h-20 pl-24 pr-24 justify-between bg-slate-700 items-center">
-      <img className="h-14" src={logo} alt="" />
+      <img className="h-16 w-16" src={logo} alt="" />
       <div className="text-white font-semibold">
         <a href="/shop">Shop</a>
         <a href="/orders">Orders</a>

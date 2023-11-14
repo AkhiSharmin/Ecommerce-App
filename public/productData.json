@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Lipstick - Ruby Red",
+    "brand": "Glam Beauty",
+    "category": "Lipstick",
+    "rating": 4.5,
+    "price": 12.99,
+    "seller": "Jon",
+    "quantity": 5,
+    "img": "https://i.ibb.co/k4Pk97h/lipstick.png"
+  },
+  {
+    "id": 2,
+    "name": "Mascara - Volume Boost",
+    "brand": "Lush Lashes",
+    "category": "Mascara",
+    "rating": 4.1,
+    "price": 9.99,
+    "seller": "Emma",
+    "quantity": 5,
+    "img": "https://i.ibb.co/4m4Pczk/Screenshot-2023-11-14-214728.png"
+  },
+  {
+    "id": 3,
+    "name": "Eyeshadow Palette - Sunset Vibes",
+    "brand": "ColorPop",
+    "category": "Eyeshadow",
+    "rating": 4.5,
+    "price": 24.99,
+    "quantity": 5,
+    "seller": "Alex",
+    "img": "https://i.ibb.co/gRSbsyG/istockphoto-1336033122-612x612.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Foundation - Flawless Finish",
+    "brand": "BlendMaster",
+    "category": "Foundation",
+    "price": 19.99,
+    "rating": 4.3,
+    "quantity": 5,
+    "seller": "Maya",
+    "img": "https://i.ibb.co/GszgmbL/Liquid-Foundation-img-2.png"
+  },
+  {
+    "id": 5,
+    "name": "Blush - Rosy Glow",
+    "brand": "CheekChic",
+    "category": "Blush",
+    "price": 14.99,
+    "quantity": 5,
+    "rating": 4.5,
+    "seller": "Carter",
+    "img": "https://i.ibb.co/SsJ7F1x/istockphoto-1283396131-612x612.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Makeup Setting Spray - Dewy Mist",
+    "brand": "FixItFab",
+    "category": "Setting Spray",
+    "price": 8.99,
+    "rating": 4.5,
+    "quantity": 5,
+    "seller": "Olivia",
+    "img": "https://i.ibb.co/GQS38F3/PT-MASCARA-SINGLE-656.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Highlighter - Champagne Glow",
+    "brand": "RadianceRevive",
+    "category": "Highlighter",
+    "price": 16.99,
+    "rating": 4.5,
+    "quantity": 5,
+    "seller": "Liam",
+    "img": "https://i.ibb.co/Vqd23F6/intro-1668180736.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Eyeliner - Precision Black",
+    "brand": "InkMaster",
+    "category": "Eyeliner",
+    "price": 11.99,
+    "rating": 4.5,
+    "quantity": 5,
+    "seller": "Ava",
+    "img": "https://i.ibb.co/Xyw4MQ8/eyeliner-designs-m.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Contour Kit - Sculpt & Define",
+    "brand": "ContourCraft",
+    "category": "Contour",
+    "price": 29.99,
+    "rating": 4.5,
+    "seller": "Ethan",
+    "quantity": 5,
+    "img": "https://i.ibb.co/7tjxmcx/contour-makeup.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Lip Gloss - Pink Petal",
+    "brand": "ShineOn",
+    "category": "Lip Gloss",
+    "price": 10.99,
+    "rating": 4.5,
+    "quantity": 5,
+    "seller": "Mia",
+    "img": "https://i.ibb.co/sKBPWRW/depositphotos-606795102-stock-photo-beauty-makeup-skincare-cosmetics-model.webp"
+  },
+  {
+    "id": 11,
+    "name": "BB Cream - Natural Glow",
+    "brand": "RadiantSkin",
+    "category": "BB Cream",
+    "price": 22.99,
+    "rating": 4.5,
+    "quantity": 5,
+    "seller": "Noah",
+    "img": "https://i.ibb.co/zFxDdZj/BBnm.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Nail Polish - Midnight Blue",
+    "brand": "PolishPerfection",
+    "category": "Nail Polish",
+    "price": 6.99,
+    "rating": 4.5,
+    "seller": "Sophia",
+    "quantity": 5,
+    "img": "https://i.ibb.co/0Qn22H6/71qny-NO4-Ru-L-AC-UF894-1000-QL80.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Makeup Remover Refreshing",
+    "brand": "CleanSweep",
+    "category": "Makeup Remover",
+    "price": 7.99,
+    "rating": 4.5,
+    "quantity": 5,
+    "seller": "Jon",
+    "img": "https://i.ibb.co/FJCfc80/stock-photo-pretty-young-woman-bare-shoulders-removing-makeup-cotton-pads-isolated.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Setting Powder - Translucent",
+    "brand": "VelvetFinish",
+    "category": "Setting Powder",
+    "price": 18.99,
+    "rating": 4.5,
+    "seller": "Harper",
+    "quantity": 5,
+    "img": "https://i.ibb.co/YcZbDzq/Main-3b3f85c2-03b7-4167-ab06-efe3ac8049a2.webp"
+  },
+  {
+    "id": 15,
+    "name": "Brow Pencil - Espresso Brown",
+    "brand": "BrowMaster",
+    "category": "Eyebrow",
+    "price": 9.99,
+    "rating": 4.5,
+    "quantity": 5,
+    "seller": "Lucas",
+    "img": "https://i.ibb.co/p2fjphH/istockphoto-1191843383-612x612.jpg"
+  }
+]
