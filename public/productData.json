@@ -8,6 +8,7 @@
     "price": 12.99,
     "seller": "Jon",
     "quantity": 5,
+    "shipping": 2,
     "img": "https://i.ibb.co/k4Pk97h/lipstick.png"
   },
   {
@@ -16,9 +17,10 @@
     "brand": "Lush Lashes",
     "category": "Mascara",
     "rating": 4.1,
-    "price": 900,
+    "price": 90,
     "seller": "Emma",
     "quantity": 5,
+    "shipping": 2,
     "img": "https://i.ibb.co/4m4Pczk/Screenshot-2023-11-14-214728.png"
   },
   {
@@ -30,6 +32,7 @@
     "price": 240,
     "quantity": 5,
     "seller": "Alex",
+    "shipping": 1,
     "img": "https://i.ibb.co/gRSbsyG/istockphoto-1336033122-612x612.jpg"
   },
   {
@@ -40,6 +43,7 @@
     "price": 19,
     "rating": 4.3,
     "quantity": 5,
+    "shipping": 4,
     "seller": "Maya",
     "img": "https://i.ibb.co/GszgmbL/Liquid-Foundation-img-2.png"
   },
@@ -52,6 +56,7 @@
     "quantity": 5,
     "rating": 4.5,
     "seller": "Carter",
+    "shipping": 2,
     "img": "https://i.ibb.co/SsJ7F1x/istockphoto-1283396131-612x612.jpg"
   },
   {
@@ -63,6 +68,7 @@
     "rating": 4.5,
     "quantity": 5,
     "seller": "Olivia",
+    "shipping": 6,
     "img": "https://i.ibb.co/GQS38F3/PT-MASCARA-SINGLE-656.jpg"
   },
   {
@@ -74,6 +80,7 @@
     "rating": 4.5,
     "quantity": 5,
     "seller": "Liam",
+    "shipping": 7,
     "img": "https://i.ibb.co/Vqd23F6/intro-1668180736.jpg"
   },
   {
@@ -85,6 +92,7 @@
     "rating": 4.5,
     "quantity": 5,
     "seller": "Ava",
+    "shipping": 6,
     "img": "https://i.ibb.co/Xyw4MQ8/eyeliner-designs-m.jpg"
   },
   {
@@ -96,6 +104,7 @@
     "rating": 4.5,
     "seller": "Ethan",
     "quantity": 5,
+    "shipping": 2,
     "img": "https://i.ibb.co/7tjxmcx/contour-makeup.jpg"
   },
   {
@@ -107,6 +116,7 @@
     "rating": 4.5,
     "quantity": 5,
     "seller": "Mia",
+    "shipping": 4,
     "img": "https://i.ibb.co/sKBPWRW/depositphotos-606795102-stock-photo-beauty-makeup-skincare-cosmetics-model.webp"
   },
   {
@@ -118,6 +128,7 @@
     "rating": 4.5,
     "quantity": 5,
     "seller": "Noah",
+    "shipping": 2,
     "img": "https://i.ibb.co/zFxDdZj/BBnm.jpg"
   },
   {
@@ -129,6 +140,7 @@
     "rating": 4.5,
     "seller": "Sophia",
     "quantity": 5,
+    "shipping": 1,
     "img": "https://i.ibb.co/0Qn22H6/71qny-NO4-Ru-L-AC-UF894-1000-QL80.jpg"
   },
   {
@@ -140,6 +152,7 @@
     "rating": 4.5,
     "quantity": 5,
     "seller": "Jon",
+    "shipping": 1,
     "img": "https://i.ibb.co/FJCfc80/stock-photo-pretty-young-woman-bare-shoulders-removing-makeup-cotton-pads-isolated.jpg"
   },
   {
@@ -151,6 +164,7 @@
     "rating": 4.5,
     "seller": "Harper",
     "quantity": 5,
+    "shipping": 3,
     "img": "https://i.ibb.co/YcZbDzq/Main-3b3f85c2-03b7-4167-ab06-efe3ac8049a2.webp"
   },
   {
@@ -162,6 +176,7 @@
     "rating": 4.5,
     "quantity": 5,
     "seller": "Lucas",
+    "shipping": 2,
     "img": "https://i.ibb.co/p2fjphH/istockphoto-1191843383-612x612.jpg"
   }
 ]
