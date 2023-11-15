@@ -1,4 +1,5 @@
 const Cart = ({ cart }) => {
+  console.log(cart);
   //calculate total price
   let totalPrice = 0;
   //   calculate shipping
