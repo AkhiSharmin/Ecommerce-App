@@ -9,7 +9,7 @@ const Cart = ({ cart }) => {
   }
 
   //calculate tax.. total tk r 7% hobe tax
-  const totalTax = ((totalPrice * 7) / 100).toFixed(2);
+  const totalTax = (totalPrice * 7) / 100;
 
   //calculate grand total
   const grandTotal = totalPrice + totalShipping + totalTax;
@@ -20,8 +20,8 @@ const Cart = ({ cart }) => {
       <p className="pb-2">Selected Items: {cart.length}</p>
       <p className="pb-2">Total Price: {totalPrice}$</p>
       <p className="pb-2">Total Shipping: {totalShipping}$</p>
-      <p className="pb-2">Tax: {totalTax}$</p>
-      <p>Grand Total: {grandTotal}$</p>
+      <p className="pb-2">Tax: {totalTax.toFixed(2)}$</p>
+      <p>Grand Total: {grandTotal.toFixed(2)}$</p>
     </div>
   );
 };
