@@ -2,7 +2,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <nav className="flex h-20 pl-24 pr-24 justify-between bg-slate-700 items-center">
+    <nav className="flex h-20 pl-24 pr-24 justify-between bg-slate-700 items-center sticky">
       <div className="text-white">
         <img
           className="h-16 w-16"
