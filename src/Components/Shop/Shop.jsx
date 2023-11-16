@@ -18,6 +18,9 @@ const Shop = () => {
 
   useEffect(() => {
     const storedCart = getShoppingCart();
+
+    const savedCart = [];
+
     //step 1 get id of the addedProduct
     for (const id in storedCart) {
       //step-2 get product from products state by using id
@@ -26,11 +29,16 @@ const Shop = () => {
         //step-3 add quantity
         const quantity = storedCart[id];
         addedProduct.quantity = quantity;
-        console.log(addedProduct);
-      } else {
-        console.log(`Product with id ${id} not found in the products array.`);
+        // console.log(addedProduct);
+        //step-4 add the addedProduct to the saved cart
+        savedCart.push(addedProduct);
       }
+      //   else {
+      //     console.log(`Product with id ${id} not found in the products array.`);
+      //   }
     }
+    //step-5 set the cart
+    setCart(savedCart);
   }, [products]);
 
   const handelAddToCart = (product) => {
