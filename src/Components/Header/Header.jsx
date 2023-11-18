@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom/dist";
 import "./Header.css";
 
 const Header = () => {
@@ -12,11 +13,11 @@ const Header = () => {
         <h2 className="font-semibold pb-4">Beauty Zoon</h2>
       </div>
       <div className="text-white font-semibold">
-        <a href="/">Home</a>
-        <a href="/shop">Shop</a>
-        <a href="/orders">Orders</a>
-        <a href="/inventory">Inventory</a>
-        <a href="/login">Login</a>
+        <Link to="/">Home</Link>
+        <Link to="/shop">Shop</Link>
+        <Link to="/orders">Orders</Link>
+        <Link to="/inventory">Inventory</Link>
+        <Link to="/login">Login</Link>
       </div>
     </nav>
   );
