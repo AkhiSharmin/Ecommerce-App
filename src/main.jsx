@@ -7,6 +7,9 @@ import Home from "./Components/Home/Home.jsx";
 import Shop from "./Components/Shop/Shop.jsx";
 import Banner from "./Components/Banner/Banner.jsx";
 import ShopByCategory from "./Components/ShopBy Category/ShopByCategory.jsx";
+import Orders from "./Components/Orders/Orders.jsx";
+import Inventory from "./Components/Inventory/Inventory.jsx";
+import Login from "./Components/Login/Login.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +27,18 @@ const router = createBrowserRouter([
       {
         path: "banner",
         element: <Banner />,
+      },
+      {
+        path: "orders",
+        element: <Orders />,
+      },
+      {
+        path: "inventory",
+        element: <Inventory />,
+      },
+      {
+        path: "login",
+        element: <Login />,
       },
       {
         path: "ShopByCategory",

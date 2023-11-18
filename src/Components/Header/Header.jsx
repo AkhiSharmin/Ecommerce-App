@@ -12,6 +12,7 @@ const Header = () => {
         <h2 className="font-semibold pb-4">Beauty Zoon</h2>
       </div>
       <div className="text-white font-semibold">
+        <a href="/">Home</a>
         <a href="/shop">Shop</a>
         <a href="/orders">Orders</a>
         <a href="/inventory">Inventory</a>

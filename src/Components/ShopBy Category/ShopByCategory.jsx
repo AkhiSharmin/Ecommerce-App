@@ -1,12 +1,11 @@
-import "./ShopByCategory.css";
 const ShopByCategory = () => {
   return (
-    <div className="max-w-full mx-auto gap-5 p-8 px-5">
+    <div className="max-w-full mx-auto p-8 px-5">
       <h2 className="text-3xl p-4 from-neutral-500">Shop By Category</h2>
-      <div className="grid grid-cols-6 gap-4 justify-center items-center">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 justify-center items-center">
         <div className="text-center">
           <img
-            className="rounded-full mx-auto"
+            className="rounded-full mx-auto "
             src="https://i.ibb.co/drgTCtC/category-7.jpg"
             alt="Lips"
           />
