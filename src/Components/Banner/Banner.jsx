@@ -8,6 +8,7 @@ const Banner = () => {
           src="https://i.ibb.co/wQWgC8F/Screenshot-2023-11-18-161858-removebg-preview.png"
           alt=""
         />
+
         <button className="btn btn-outline border-orange-500 text-white text-3xl mt-10">
           Start A plan
         </button>
