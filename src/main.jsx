@@ -6,6 +6,7 @@ import "./index.css";
 import Home from "./Components/Home/Home.jsx";
 import Shop from "./Components/Shop/Shop.jsx";
 import Banner from "./Components/Banner/Banner.jsx";
+import ShopByCategory from "./Components/ShopBy Category/ShopByCategory.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "banner",
         element: <Banner />,
+      },
+      {
+        path: "ShopByCategory",
+        element: <ShopByCategory />,
       },
     ],
   },
