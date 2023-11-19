@@ -2,6 +2,9 @@ import { useLoaderData } from "react-router-dom/dist";
 import Cart from "../Cart/Cart";
 import ReviewItem from "../ReviewItem/ReviewItem";
 import { useState } from "react";
+import { deleteShoppingCart, removeFromDb } from "../../utilites/fakedb";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Orders = () => {
   const savedCart = useLoaderData();
@@ -11,6 +14,15 @@ const Orders = () => {
   const handelRemoveFromCart = (id) => {
     const reaming = cart.filter((product) => product.id !== id);
     setCart(reaming);
+    removeFromDb(id);
+  };
+
+  const handelClearCart = () => {
+    setCart([]);
+    const deleteAll = deleteShoppingCart();
+    if (deleteAll) {
+      toast.success("All Shopping deleted successfully!");
+    }
   };
 
   return (
@@ -25,7 +37,7 @@ const Orders = () => {
         ))}
       </div>
       <div className="col-span-1 sticky top-0">
-        <Cart cart={cart} />
+        <Cart cart={cart} handelClearCart={handelClearCart} />
       </div>
     </div>
   );
