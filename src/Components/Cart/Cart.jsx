@@ -1,3 +1,4 @@
+import "./Cart.css";
 const Cart = ({ cart }) => {
   console.log(cart);
   //calculate total price
@@ -24,7 +25,7 @@ const Cart = ({ cart }) => {
   const grandTotal = totalPrice + totalShipping + totalTax;
 
   return (
-    <div className="bg-slate-100 p-8 text-[17px] sticky top-0">
+    <div className="bg-slate-100 p-8 text-[17px]  order-summary">
       <h3 className="pb-2 font-bold text-2xl">Oder summary</h3>
       <p className="pb-2">Selected Items: {quantity}</p>
       <p className="pb-2">Total Price: {totalPrice.toFixed(2)}$</p>
