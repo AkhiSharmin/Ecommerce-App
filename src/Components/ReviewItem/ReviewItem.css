@@ -1,0 +1,13 @@
+.review-details {
+  flex-grow: 1;
+}
+
+.btn-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-color: rgba(235, 87, 87, 0.3);
+}
