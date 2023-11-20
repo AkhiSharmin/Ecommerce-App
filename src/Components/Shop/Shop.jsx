@@ -1,9 +1,15 @@
 import { useEffect, useState } from "react";
 
-import { addToDb, getShoppingCart } from "../../utilites/fakedb";
+import {
+  addToDb,
+  deleteShoppingCart,
+  getShoppingCart,
+} from "../../utilites/fakedb";
 
 import Product from "../Product/Product";
 import Cart from "../Cart/Cart";
+import { FaTrash } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
@@ -57,6 +63,11 @@ const Shop = () => {
     addToDb(product.id);
   };
 
+  const handelClearCart = () => {
+    setCart([]);
+    deleteShoppingCart();
+  };
+
   return (
     <div>
       <div className="shop-container max-w-full mx-auto grid grid-cols-5 gap-5 p-8">
@@ -72,7 +83,16 @@ const Shop = () => {
           </div>
         </div>
         <div className="cart-container col-span-1">
-          <Cart cart={cart}></Cart>
+          <Cart cart={cart} handelClearCart={handelClearCart}>
+            <Link to="/orders">
+              <button className="btn btn-outline btn-wide text-lg text-black my-4 flex justify-between items-center">
+                Review Order
+                <span className="text-red-700">
+                  <FaTrash />
+                </span>
+              </button>
+            </Link>
+          </Cart>
         </div>
       </div>
     </div>

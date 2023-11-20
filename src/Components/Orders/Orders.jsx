@@ -37,7 +37,9 @@ const Orders = () => {
         ))}
       </div>
       <div className="col-span-1 sticky top-0">
-        <Cart cart={cart} handelClearCart={handelClearCart} />
+        <Cart cart={cart} handelClearCart={handelClearCart}>
+          <div>From Orders</div>
+        </Cart>
       </div>
     </div>
   );

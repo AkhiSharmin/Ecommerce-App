@@ -1,6 +1,6 @@
 import "./Cart.css";
 import { FaTrash } from "react-icons/fa";
-const Cart = ({ cart, handelClearCart }) => {
+const Cart = ({ cart, handelClearCart, children }) => {
   console.log(cart);
   //calculate total price
   let totalPrice = 0;
@@ -42,6 +42,7 @@ const Cart = ({ cart, handelClearCart }) => {
           <FaTrash />
         </span>
       </button>
+      {children}
     </div>
   );
 };
