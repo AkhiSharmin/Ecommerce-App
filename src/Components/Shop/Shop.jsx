@@ -78,7 +78,7 @@ const Shop = () => {
 
   return (
     <div>
-      <div className="shop-container max-w-full mx-auto grid grid-cols-5 gap-5 p-8">
+      <div className="shop-container max-w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-5 p-8">
         <div className="product-container col-span-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {products.slice(0, displayCount).map((product) => (
@@ -91,17 +91,17 @@ const Shop = () => {
           </div>
           {products.length > 6 && (
             <button
-              className="btn mt-10 hover:bg-green-200 btn-wide mx-auto seeMoreLess"
+              className="btn shadow-2xl border-2 border-b-orange-600 text-lg text-black my-4 flex items-center gap-10 mt-10  btn-wide mx-auto seeMoreLess"
               onClick={handleToggleClick}
             >
               {displayCount === 6 ? "See More" : "See Less"}
             </button>
           )}
         </div>
-        <div className="cart-container col-span-1">
+        <div className="cart-container md:flex lg:col-span-1">
           <Cart cart={cart} handelClearCart={handelClearCart}>
             <Link to="/orders">
-              <button className="btn btn-outline btn-wide text-lg text-black my-4 flex justify-between items-center">
+              <button className="btn shadow-2xl border-2 border-b-orange-600 text-lg text-black my-4 flex items-center gap-10">
                 Review Order
                 <span className="text-red-700">
                   <FaTrash />

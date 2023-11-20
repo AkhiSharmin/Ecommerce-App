@@ -26,7 +26,7 @@ const Cart = ({ cart, handelClearCart, children }) => {
   const grandTotal = totalPrice + totalShipping + totalTax;
 
   return (
-    <div className="bg-slate-100 p-8 text-[17px]  order-summary">
+    <div className=" p-8 text-[17px]  order-summary">
       <h3 className="pb-2 font-bold text-2xl">Oder summary</h3>
       <p className="pb-2">Selected Items: {quantity}</p>
       <p className="pb-2">Total Price: {totalPrice.toFixed(2)}$</p>
@@ -35,10 +35,10 @@ const Cart = ({ cart, handelClearCart, children }) => {
       <p>Grand Total: {grandTotal.toFixed(2)}$</p>
       <button
         onClick={handelClearCart}
-        className="btn btn-outline btn-wide text-lg text-black my-4 flex justify-between items-center"
+        className="btn shadow-2xl border-2 border-b-orange-600 text-lg text-black my-4 flex items-center gap-10"
       >
         Clear Cart{" "}
-        <span className="text-red-700">
+        <span className="text-red-900">
           <FaTrash />
         </span>
       </button>

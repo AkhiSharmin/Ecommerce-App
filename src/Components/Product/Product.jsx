@@ -21,7 +21,7 @@ const Product = (props) => {
         </div>
         <button
           onClick={() => handelAddToCart(props.product)}
-          className="btn hover:bg-green-200 btn-wide w-full"
+          className="btn border-2 border-b-orange-400 text-lg text-black flex items-center gap-10 btn-wide w-full"
         >
           Add To Cart <FaShoppingCart />
         </button>

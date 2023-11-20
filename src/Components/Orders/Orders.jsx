@@ -40,7 +40,7 @@ const Orders = () => {
       <div className="col-span-1 sticky top-0">
         <Cart cart={cart} handelClearCart={handelClearCart}>
           <Link to="/checkout">
-            <button className="btn btn-outline btn-wide text-lg text-black my-4 flex justify-between items-center">
+            <button className="btn shadow-2xl border-2 border-b-orange-600 text-lg my3 text-black flex items-center gap-5">
               Proceed CheckOut
               <span className="text-red-700">
                 <FaTrash />

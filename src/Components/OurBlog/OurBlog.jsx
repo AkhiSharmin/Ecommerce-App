@@ -9,7 +9,7 @@ const OurBlog = () => {
             alt=""
           />
           <div className="text-center ">
-            <h2 className="text-2xl font-500 hover:text-orange-600">
+            <h2 className="text-2xl font-500 pt-3 hover:text-orange-600">
               Solution for acne and sensitive skin
             </h2>
             <p className="text-xl border-b-2 border-b-orange-600 my-3 inline-block hover:text-orange-600">
