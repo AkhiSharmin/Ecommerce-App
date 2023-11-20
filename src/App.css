@@ -5,6 +5,5 @@
 @tailwind utilities;
 
 html {
-  /* font-family: "Courier New", Courier, monospace; */
   font-family: "IvyMode Regular", serif;
 }

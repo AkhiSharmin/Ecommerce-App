@@ -25,7 +25,7 @@
   },
   {
     "id": "3",
-    "name": "Eyeshadow Palette - Sunset Vibes",
+    "name": "Eyeshadow Palette",
     "brand": "ColorPop",
     "category": "Eyeshadow",
     "rating": 4.5,
@@ -37,7 +37,7 @@
   },
   {
     "id": "4",
-    "name": "Foundation - Flawless Finish",
+    "name": "Foundation - Flawless",
     "brand": "BlendMaster",
     "category": "Foundation",
     "price": 19,
@@ -61,7 +61,7 @@
   },
   {
     "id": "6",
-    "name": "Makeup Setting Spray - Dewy Mist",
+    "name": "Makeup Setting Spray",
     "brand": "FixItFab",
     "category": "Setting Spray",
     "price": 89,

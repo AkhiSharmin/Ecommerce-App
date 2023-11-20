@@ -1,0 +1,34 @@
+.sliderImg img {
+  border: 2px solid darkgrey;
+}
+
+.slick-slide {
+  padding-right: 10px;
+}
+
+/* hover style  */
+
+.sliderHoverImg {
+  position: relative;
+  display: inline-block;
+}
+
+.sliderHoverImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://i.ibb.co/mhkXwb7/Rectangle-2-600x750.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid darkgrey;
+  opacity: 0; /* Initially invisible */
+  transition: opacity 0.3s ease; /* Add a transition for a smoother effect */
+}
+
+.sliderHoverImg:hover::before {
+  opacity: 1; /* Make the background visible on hover */
+}

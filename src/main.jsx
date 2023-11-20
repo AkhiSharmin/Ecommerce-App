@@ -13,6 +13,8 @@ import Login from "./Components/Login/Login.jsx";
 import cartProductLoader from "./Loader/cartProductLoader.js";
 import CheckOut from "./Components/CheckOut/CheckOut.jsx";
 import SkinCare from "./Components/SkinCare/SkinCare.jsx";
+import NewArrivals from "./Components/NewArrivals/NewArrivals.jsx";
+import OurBlog from "./Components/OurBlog/OurBlog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +49,14 @@ const router = createBrowserRouter([
       {
         path: "skincare",
         element: <SkinCare />,
+      },
+      {
+        path: "newarrivals",
+        element: <NewArrivals />,
+      },
+      {
+        path: "ourblog",
+        element: <OurBlog />,
       },
       {
         path: "login",

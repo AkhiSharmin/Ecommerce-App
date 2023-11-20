@@ -10,11 +10,14 @@ import Product from "../Product/Product";
 import Cart from "../Cart/Cart";
 import { FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import "./Shop.css";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
 
   const [cart, setCart] = useState([]);
+
+  const [displayCount, setDisplayCount] = useState(6);
 
   useEffect(() => {
     fetch("productData.json")
@@ -68,19 +71,32 @@ const Shop = () => {
     deleteShoppingCart();
   };
 
+  const handleToggleClick = () => {
+    // Toggle between 6 and the total number of products
+    setDisplayCount(displayCount === 6 ? products.length : 6);
+  };
+
   return (
     <div>
       <div className="shop-container max-w-full mx-auto grid grid-cols-5 gap-5 p-8">
         <div className="product-container col-span-4">
           <div className="grid grid-cols-3 gap-5">
-            {products.map((product) => (
+            {products.slice(0, displayCount).map((product) => (
               <Product
                 product={product}
                 key={product.id}
                 handelAddToCart={handelAddToCart}
-              ></Product>
+              />
             ))}
           </div>
+          {products.length > 6 && (
+            <button
+              className="btn mt-10 hover:bg-green-200 btn-wide mx-auto seeMoreLess"
+              onClick={handleToggleClick}
+            >
+              {displayCount === 6 ? "See More" : "See Less"}
+            </button>
+          )}
         </div>
         <div className="cart-container col-span-1">
           <Cart cart={cart} handelClearCart={handelClearCart}>

@@ -1,7 +1,7 @@
 import "./SkinCare.css";
 const SkinCare = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 max-w-full pt-12 pb-28">
+    <div className="grid grid-cols-1 lg:grid-cols-2 max-w-full pt-12 pb-16">
       <div className="skinCare mx-auto relative">
         <img
           className="opacity-2"

@@ -10,7 +10,7 @@ const Banner = () => {
         />
 
         <button className="btn btn-outline border-orange-500 text-white text-3xl mt-10">
-          Start A plan
+          Lets Start A plan
         </button>
       </div>
     </div>
