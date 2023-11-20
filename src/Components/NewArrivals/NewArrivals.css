@@ -1,19 +1,55 @@
+.slick-next::before {
+  font-size: 30px !important;
+  color: black !important;
+}
+
+.slick-prev::before {
+  font-size: 30px !important;
+  color: black !important;
+}
+
 .sliderImg img {
   border: 2px solid darkgrey;
 }
 
-.slick-slide {
-  padding-right: 10px;
+.slick-prev {
+  left: -46px;
 }
+.slick-next {
+  right: -46px;
+}
+
+.slick-list {
+  margin: 0 -15px !important;
+}
+.slick-slide > div {
+  padding: 0 15px !important;
+}
+
+/* .slick-slide {
+  margin-right: 10px;
+} */
 
 /* hover style  */
 
-.sliderHoverImg {
+.sliderHoverImg1 {
+  position: relative;
+  display: inline-block;
+}
+.sliderHoverImg2 {
+  position: relative;
+  display: inline-block;
+}
+.sliderHoverImg3 {
+  position: relative;
+  display: inline-block;
+}
+.sliderHoverImg4 {
   position: relative;
   display: inline-block;
 }
 
-.sliderHoverImg::before {
+.sliderHoverImg1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -29,6 +65,28 @@
   transition: opacity 0.3s ease; /* Add a transition for a smoother effect */
 }
 
-.sliderHoverImg:hover::before {
+.sliderHoverImg1:hover::before {
   opacity: 1; /* Make the background visible on hover */
+}
+.sliderHoverImg2:hover::before {
+  opacity: 1; /* Make the background visible on hover */
+}
+.sliderHoverImg3:hover::before {
+  opacity: 1; /* Make the background visible on hover */
+}
+.sliderHoverImg4:hover::before {
+  opacity: 1; /* Make the background visible on hover */
+}
+.sliderHoverImg5:hover::before {
+  opacity: 1; /* Make the background visible on hover */
+}
+
+.sliderHoverImg2::before {
+  background-image: url("https://i.ibb.co/1MGybK3/Rectangle-27-600x750.jpg");
+}
+.sliderHoverImg3::before {
+  background-image: url("https://i.ibb.co/qdy3Z5j/Rectangle-53-600x750.jpg");
+}
+.sliderHoverImg4::before {
+  background-image: url("https://i.ibb.co/dMXNJm4/Rectangle-62-600x750.jpg");
 }

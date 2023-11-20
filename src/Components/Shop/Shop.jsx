@@ -80,7 +80,7 @@ const Shop = () => {
     <div>
       <div className="shop-container max-w-full mx-auto grid grid-cols-5 gap-5 p-8">
         <div className="product-container col-span-4">
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {products.slice(0, displayCount).map((product) => (
               <Product
                 product={product}

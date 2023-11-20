@@ -1,6 +1,6 @@
 const OurBlog = () => {
   return (
-    <div>
+    <div className="pb-14">
       <h2 className="text-4xl font-500 text-center py-8">Form Our Blog</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-5 px-8 py-8">
         <div className="skinCare">
@@ -9,7 +9,7 @@ const OurBlog = () => {
             alt=""
           />
           <div className="text-center ">
-            <h2 className="text-2xl font-500 pt-3 hover:text-orange-600">
+            <h2 className="text-2xl font-500 hover:text-orange-600">
               Solution for acne and sensitive skin
             </h2>
             <p className="text-xl border-b-2 border-b-orange-600 my-3 inline-block hover:text-orange-600">
