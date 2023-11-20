@@ -1,23 +1,67 @@
 import { Link } from "react-router-dom/dist";
 import "./Header.css";
+import { FaHeart, FaShoppingBag } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <nav className="flex h-20 pl-24 pr-24 justify-between bg-slate-700 items-center">
-      <div className="text-white">
-        <img
-          className="h-16 w-16"
-          src="https://i.ibb.co/f0cqP1m/Screenshot-2023-11-15-010704-removebg-preview.png"
-          alt=""
-        />
-        <h2 className="font-semibold pb-4">Beauty Zoon</h2>
-      </div>
-      <div className="text-white font-semibold">
-        <Link to="/">Home</Link>
-        <Link to="/shop">Shop</Link>
-        <Link to="/orders">Orders</Link>
-        <Link to="/inventory">Inventory</Link>
-        <Link to="/login">Login</Link>
+    <nav>
+      <div className="navbar bg-slate-300 p-4">
+        <div className="navbar-start">
+          <div>
+            <ul className="flex  text-lg font-500 font-semibold">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/shop">Shop</Link>
+              </li>
+              <li>
+                <Link to="/orders">Orders</Link>
+              </li>
+              <li>
+                <Link to="/inventory">Inventory</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="navbar-center">
+          <img
+            className="w-[130px]"
+            src="https://i.ibb.co/w4jmhm9/logo.png"
+            alt=""
+          />
+        </div>
+        <div className="navbar-end">
+          <button className="btn btn-ghost btn-circle">
+            <FaShoppingBag />
+          </button>
+          <button className="btn btn-ghost btn-circle">
+            <FaHeart />
+          </button>
+          <button className="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+          <button>
+            <input
+              type="text"
+              placeholder="Type here"
+              className="input input-bordered input-warning w-full max-w-xs"
+            />
+          </button>
+        </div>
       </div>
     </nav>
   );

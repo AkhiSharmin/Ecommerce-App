@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
 function App() {
   return (
     <div className="overflow-hidden">
-      <ScrollToTop smooth />
+      <ScrollToTop className="bg-slate-200 text-white border-2" smooth />
       <Header />
       <Outlet />
       <Footer />

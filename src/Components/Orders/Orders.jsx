@@ -1,10 +1,11 @@
-import { useLoaderData } from "react-router-dom/dist";
+import { Link, useLoaderData } from "react-router-dom/dist";
 import Cart from "../Cart/Cart";
 import ReviewItem from "../ReviewItem/ReviewItem";
 import { useState } from "react";
 import { deleteShoppingCart, removeFromDb } from "../../utilites/fakedb";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FaTrash } from "react-icons/fa";
 
 const Orders = () => {
   const savedCart = useLoaderData();
@@ -38,7 +39,14 @@ const Orders = () => {
       </div>
       <div className="col-span-1 sticky top-0">
         <Cart cart={cart} handelClearCart={handelClearCart}>
-          <div>From Orders</div>
+          <Link to="/checkout">
+            <button className="btn btn-outline btn-wide text-lg text-black my-4 flex justify-between items-center">
+              Proceed CheckOut
+              <span className="text-red-700">
+                <FaTrash />
+              </span>
+            </button>
+          </Link>
         </Cart>
       </div>
     </div>
